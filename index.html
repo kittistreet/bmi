@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณค่าดัชนีมวลกาย (BMI)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <h1 class="mt-5">คำนวณค่าดัชนีมวลกาย (BMI)</h1>
+
+
+
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">น้ำหนัก (กิโลกรัม)</span>
+                <input type="number" id="weight" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">ส่วนสูง (เซนติเมตร)</span>
+                <input type="number" id="height" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+
+
+            <button onclick="calculateBMI()" class="btn btn-outline-success">คำนวณ</button>
+
+
+            <p id="bmi-result"></p>
+
+            <h3>ประวัติการคำนวณ</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>วันที่และเวลา</th>
+                        <th>น้ำหนัก (กิโลกรัม)</th>
+                        <th>ส่วนสูง (เซนติเมตร)</th>
+                        <th>BMI</th>
+                        <th>สถานะ</th>
+                    </tr>
+                </thead>
+                <tbody id="history-list">
+                    <!-- รายการบันทึกจะถูกเพิ่มที่นี่ -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
